@@ -1,0 +1,11 @@
+
+overlay	chrome://scrapbook/content/tree.xul	chrome://sbcopyinfo/content/treeOverlay.xul
+overlay	chrome://scrapbook/content/scrapbook.xul	chrome://sbcopyinfo/content/scrapbookOverlay.xul
+content	sbcopyinfo	jar:chrome/sbcopyinfo.jar!/content/sbcopyinfo/
+
+locale	sbcopyinfo	en-US	jar:chrome/sbcopyinfo.jar!/locale/en-US/sbcopyinfo/
+locale	sbcopyinfo	ja-JP	jar:chrome/sbcopyinfo.jar!/locale/ja-JP/sbcopyinfo/
+locale	sbcopyinfo	ru-RU	jar:chrome/sbcopyinfo.jar!/locale/ru-RU/sbcopyinfo/
+locale	sbcopyinfo	fr-FR	jar:chrome/sbcopyinfo.jar!/locale/fr-FR/sbcopyinfo/
+locale	sbcopyinfo	zh-TW	jar:chrome/sbcopyinfo.jar!/locale/zh-TW/sbcopyinfo/
+

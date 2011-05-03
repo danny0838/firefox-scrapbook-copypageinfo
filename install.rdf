@@ -4,9 +4,9 @@
     <em:id>copyinfobump@scrapbook.mozdev.org</em:id>
     <em:type>2</em:type>
     <em:name>Scrapbook CopyPageInfo (bumped version)</em:name>
-    <em:version>1.3.5.2</em:version>
+    <em:version>1.3.5.3</em:version>
     <em:creator>Maria Seliger</em:creator>
-    <em:contributor>Gomita</em:contributor>
+    <em:contributor>Gomita, haselnuss</em:contributor>
     <em:description>Bumped version of the Scrapbook Add-On CopyPageInfo for Firefox 3.x and Seamonkey 2.x</em:description>
     <em:iconURL>chrome://scrapbook/skin/main_32.png</em:iconURL>
 		<em:optionsURL>chrome://sbcopyinfo/content/config.xul</em:optionsURL>
@@ -14,7 +14,7 @@
       <Description>
         <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id> <!-- Firefox -->
         <em:minVersion>3.6</em:minVersion>
-        <em:maxVersion>3.7a6pre</em:maxVersion>
+        <em:maxVersion>4.0.*</em:maxVersion>
       </Description>
     </em:targetApplication>
     <em:targetApplication>

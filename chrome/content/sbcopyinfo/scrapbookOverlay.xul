@@ -8,9 +8,6 @@
 
     <script type="application/x-javascript" src="chrome://sbcopyinfo/content/common.js" />
     <script type="application/x-javascript" src="chrome://sbcopyinfo/content/sbcopyinfo.js" />
-    <script type="application/x-javascript"><![CDATA[
-        window.addEventListener("load", function(){ if ( "flattenResources" in sbDataSource == false ) alert("ScrapBook CopyPageInfo ERROR\nPlease upgrade to ScrapBook for Seamonkey with Xsidebar or ScrapBook Plus for Firefox Version 1.8.18 or greater."); }, false);
-    ]]></script>
 
     <menu id="sbAddOns" hidden="false">
         <menupopup id="sbAddOnsPopup">

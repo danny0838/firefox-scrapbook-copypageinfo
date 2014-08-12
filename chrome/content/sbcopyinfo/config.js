@@ -4,13 +4,13 @@ var sbCopyInfoConfig = {
 
     init : function()
     {
-        this.TEXTBOX.value = sbCopyInfoCommon.getPref("copyPageInfo", "%TITLE%\n%SOURCE%\n");
+        this.TEXTBOX.value = sbCopyInfoCommon.copyUnicharPref("copyPageInfo", "%TITLE%\n%SOURCE%\n");
         this.TEXTBOX.focus();
     },
 
     done : function()
     {
-        sbCopyInfoCommon.setPref("copyPageInfo", this.TEXTBOX.value);
+        sbCopyInfoCommon.setUnicharPref("copyPageInfo", this.TEXTBOX.value);
     },
 
     setPreset : function(flag)

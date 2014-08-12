@@ -4,13 +4,13 @@ var sbCopyInfoConfig = {
 
 	init : function()
 	{
-		this.TEXTBOX.value = nsPreferences.copyUnicharPref("scrapbook.copyPageInfo", "%TITLE%\n%SOURCE%\n");
+		this.TEXTBOX.value = sbCopyInfoCommon.getPref("copyPageInfo", "%TITLE%\n%SOURCE%\n");
 		this.TEXTBOX.focus();
 	},
 
 	done : function()
 	{
-		nsPreferences.setUnicharPref("scrapbook.copyPageInfo", this.TEXTBOX.value);
+        sbCopyInfoCommon.setPref("copyPageInfo", this.TEXTBOX.value);
 	},
 
 	setPreset : function(flag)

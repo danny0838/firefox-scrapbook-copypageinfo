@@ -9,11 +9,7 @@ var sbCopyInfoService = {
 		{
 			return alert("ScrapBook X CopyPageInfo ERROR: Please upgrade ScrapBook to 1.0.6 or later.");
 		}
-		try {
-			this.template = sbCommonUtils.PREF.getComplexValue("scrapbook.copyPageInfo", Components.interfaces.nsISupportsString).data;
-		} catch(ex) {
-			this.template = "%TITLE%\n%SOURCE%\n";
-		}
+        this.template = sbCopyInfoCommon.getPref("copyPageInfo", "%TITLE%\n%SOURCE%\n");
 		if ( !this.template.match(/\n$/) ) txt += "\n";
 		if ( !aRes ) aRes = sbController.isTreeContext ? sbTreeHandler.resource : sbListHandler.resource;
 		this.folderPath = [];

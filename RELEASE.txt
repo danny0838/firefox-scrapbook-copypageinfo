@@ -1,0 +1,6 @@
+Scrapbook X CopyPageInfo 1.3.6
+----------------
+
+- COMPATIBLE WITH: ScrapBook X 1.12.0a24, ScrapBook Plus 1.9.24.40b3
+- UPDATE: Moved the pref branch to "extensions.scrapbook.addon.*"
+- FIXED: Supports ScrapBook X API.

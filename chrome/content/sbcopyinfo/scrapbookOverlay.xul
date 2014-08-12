@@ -6,20 +6,17 @@
 <overlay id="sbcopyinfoSidebarOverlay"
          xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
 
-	<script type="application/x-javascript" src="chrome://sbcopyinfo/content/common.js" />
-	<script type="application/x-javascript" src="chrome://sbcopyinfo/content/sbcopyinfo.js" />
-	<script type="application/x-javascript"><![CDATA[
-		window.addEventListener("load", function(){ if ( "flattenResources" in sbDataSource == false ) alert("ScrapBook CopyPageInfo ERROR\nPlease upgrade to ScrapBook for Seamonkey with Xsidebar or ScrapBook Plus for Firefox Version 1.8.18 or greater."); }, false);
-	]]></script>
+    <script type="application/x-javascript" src="chrome://sbcopyinfo/content/common.js" />
+    <script type="application/x-javascript" src="chrome://sbcopyinfo/content/sbcopyinfo.js" />
 
-	<menu id="sbAddOns" hidden="false">
-		<menupopup id="sbAddOnsPopup">
-			<menuitem id="sbCopyInfoMenu2"
-			          label="&sbcopyinfo; : &sbcopyinfo.root;"
-			          oncommand="sbCopyInfoService.exec(sbTreeHandler.TREE.resource, true);"
-			          onclick="if ( event.button == 1 ) sbCopyInfoService.exec(sbTreeHandler.TREE.resource, false);document.getElementById('sbToolsMenuPopup').hidePopup();" />
-			<menuitem label="&sbcopyinfo; : &sbcopyinfo.config;..." oncommand="window.openDialog('chrome://sbcopyinfo/content/config.xul','CopyPageInfo:Config','chrome,centerscreen,all,resizable,dialog=no');" />
-		</menupopup>
-	</menu>
+    <menu id="sbAddOns" hidden="false">
+        <menupopup id="sbAddOnsPopup">
+            <menuitem id="sbCopyInfoMenu2"
+                      label="&sbcopyinfo; : &sbcopyinfo.root;"
+                      oncommand="sbCopyInfoService.exec(sbTreeHandler.TREE.resource, true);"
+                      onclick="if ( event.button == 1 ) sbCopyInfoService.exec(sbTreeHandler.TREE.resource, false);document.getElementById('sbToolsMenuPopup').hidePopup();" />
+            <menuitem label="&sbcopyinfo; : &sbcopyinfo.config;..." oncommand="window.openDialog('chrome://sbcopyinfo/content/config.xul','CopyPageInfo:Config','chrome,centerscreen,all,resizable,dialog=no');" />
+        </menupopup>
+    </menu>
 
 </overlay>

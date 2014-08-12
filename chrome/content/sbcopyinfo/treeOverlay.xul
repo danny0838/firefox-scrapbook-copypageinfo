@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+
+<!--locale-->
+<!DOCTYPE overlay SYSTEM "chrome://sbcopyinfo/locale/sbcopyinfo.dtd">
+
+<overlay id="sbcopyinfoTreeOverlay"
+         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+	<!--JavaScript-->
+	<script type="application/x-javascript" src="chrome://sbcopyinfo/content/sbcopyinfo.js" />
+
+	<!--overlay to popup-->
+	<menupopup id="sbPopup">
+		<menuitem id="sbCopyInfoMenu"
+		          label="&sbcopyinfo;"
+		          oncommand="sbCopyInfoService.exec(null, false);"
+		          onclick="if ( event.button == 1 ) sbCopyInfoService.exec(null, true);document.getElementById('sbPopup').hidePopup();"
+		          nodelay="true"
+		          insertbefore="sbPopupTools" />
+	</menupopup>
+
+</overlay>

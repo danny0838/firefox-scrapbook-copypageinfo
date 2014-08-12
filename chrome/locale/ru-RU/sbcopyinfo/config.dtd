@@ -1,0 +1,7 @@
+<!ENTITY sbcopyinfo.format "Формат">
+<!ENTITY sbcopyinfo.preset "Предустановки">
+<!ENTITY sbcopyinfo.localURL "Local File URL">
+<!ENTITY sbcopyinfo.tab "Tab">
+<!ENTITY sbcopyinfo.withLink.localURL "with link to &sbcopyinfo.localURL;">
+<!ENTITY sbcopyinfo.withLink.sourceURL "with link to URL">
+<!ENTITY sbcopyinfo.tips.recursive "Подсказка: щелкнув правой кнопкой мыши на папке и затем средней кнопкой на пункте меню [Копировать информацию], вы можете скопировать информацию о всех страницах, расположенных в данной папке.">

@@ -1,0 +1,7 @@
+<!ENTITY sbcopyinfo.format "格式">
+<!ENTITY sbcopyinfo.preset "預設">
+<!ENTITY sbcopyinfo.localURL "擷取文件存放處">
+<!ENTITY sbcopyinfo.tab "分頁">
+<!ENTITY sbcopyinfo.withLink.localURL "加上&sbcopyinfo.localURL;連結">
+<!ENTITY sbcopyinfo.withLink.sourceURL "加上原始網址連結">
+<!ENTITY sbcopyinfo.tips.recursive "小技巧: 在資料夾上按右鍵後，於選單中的「複製文件資訊」項目上按下滑鼠中鍵，可一次擷取其下所有資料夾中文件的資訊。">

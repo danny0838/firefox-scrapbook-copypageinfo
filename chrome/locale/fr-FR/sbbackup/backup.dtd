@@ -1,8 +1,0 @@
-<!ENTITY sb.backup.d "Sauvegarde de toutes les données ScrapBook avec un logiciel de compression externe.">
-<!ENTITY sb.backup.program "Logiciel de compression">
-<!ENTITY sb.backup.file "Fichier de destination à sauvegarder">
-<!ENTITY sb.backup.browse "Parcourir">
-<!ENTITY sb.backup.arg "Arguments en ligne de commande">
-<!ENTITY sb.backup.arg.d1 "&#37;dst est le chemin vers le fichier de sauvegarde.">
-<!ENTITY sb.backup.arg.d2 "&#37;src est le chemin du dossier de ScrapBook.">
-<!ENTITY sb.backup.preset "Paramètres par défaut">

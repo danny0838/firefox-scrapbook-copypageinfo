@@ -12,12 +12,12 @@ var sbCopyInfoCommon = {
     },
 
     setPref : function (aName, aValue)
-	{
+    {
         if ("setPref" in sbCommonUtils) {  // ScrapBook X >= 1.10.3
             sbCommonUtils.setPref("addon.copyinfo." + aName, aValue);
         }
         else if ("setUnicharPref" in sbCommonUtils) {  // ScrapBook Plus or ScrapBook X < 1.10.3
             sbCommonUtils.setUnicharPref("extensions.scrapbook.addon.copyinfo." + aName, aValue);
         }
-	},
+    },
 };

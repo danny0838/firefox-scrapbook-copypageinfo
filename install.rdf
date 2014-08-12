@@ -10,9 +10,9 @@
     <em:contributor>Gomita, haselnuss</em:contributor>
     <em:description>Copies the information from ScrapBook data items.</em:description>
     <em:iconURL>chrome://scrapbook/skin/main_32.png</em:iconURL>
-		<em:optionsURL>chrome://sbcopyinfo/content/config.xul</em:optionsURL>
-		<em:unpack>true</em:unpack> 
-		<em:targetApplication>
+        <em:optionsURL>chrome://sbcopyinfo/content/config.xul</em:optionsURL>
+        <em:unpack>true</em:unpack> 
+        <em:targetApplication>
       <Description>
         <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id> <!-- Firefox -->
         <em:minVersion>3.6</em:minVersion>
@@ -21,9 +21,9 @@
     </em:targetApplication>
     <em:targetApplication>
       <Description>
-	<em:id>{92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}</em:id>
-	<em:minVersion>2.0</em:minVersion>
-	<em:maxVersion>2.1a1pre</em:maxVersion>
+    <em:id>{92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}</em:id>
+    <em:minVersion>2.0</em:minVersion>
+    <em:maxVersion>2.1a1pre</em:maxVersion>
       </Description>
     </em:targetApplication>
   </Description>

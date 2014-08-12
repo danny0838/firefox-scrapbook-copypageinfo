@@ -7,7 +7,7 @@ var sbCopyInfoService = {
 	{
 		if ( !("sbTreeHandler" in window) || !("flattenResources" in sbDataSource) )
 		{
-			return alert("ScrapBook : CopyPageInfo : ERROR\nPlease upgrade ScrapBook to 1.0.6 or later.");
+			return alert("ScrapBook X CopyPageInfo ERROR: Please upgrade ScrapBook to 1.0.6 or later.");
 		}
 		try {
 			this.template = sbCommonUtils.PREF.getComplexValue("scrapbook.copyPageInfo", Components.interfaces.nsISupportsString).data;
@@ -34,7 +34,7 @@ var sbCopyInfoService = {
 			const CLIPBOARD = Components.classes["@mozilla.org/widget/clipboardhelper;1"].getService(Components.interfaces.nsIClipboardHelper);
 			CLIPBOARD.copyString(txt);
 		} catch(ex) {
-			alert("ScrapBook ERROR: Failed to set text to clipboard.\n" + ex);
+			alert("ScrapBook X CopyPageInfo ERROR: Failed to set text to clipboard.\n" + ex);
 		}
 	},
 

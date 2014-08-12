@@ -1,0 +1,7 @@
+<!ENTITY sbcopyinfo.format "Format">
+<!ENTITY sbcopyinfo.preset "Preset">
+<!ENTITY sbcopyinfo.localURL "Local File URL">
+<!ENTITY sbcopyinfo.tab "Tab">
+<!ENTITY sbcopyinfo.withLink.localURL "with link to &sbcopyinfo.localURL;">
+<!ENTITY sbcopyinfo.withLink.sourceURL "with link to URL">
+<!ENTITY sbcopyinfo.tips.recursive "TIPS: Right-click a folder and middle-click [Copy Page Info] allows you to process sub-folders recursively.">

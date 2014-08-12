@@ -1,0 +1,66 @@
+<?xml version="1.0" ?>
+
+<!--skin-->
+<?xml-stylesheet href="chrome://global/skin/" type="text/css" ?>
+
+<!--locale-->
+<!DOCTYPE dialog [
+	<!ENTITY % copyinfoDTD SYSTEM "chrome://sbcopyinfo/locale/sbcopyinfo.dtd" >
+	%copyinfoDTD;
+	<!ENTITY % configDTD   SYSTEM "chrome://sbcopyinfo/locale/config.dtd" >
+	%configDTD;
+	<!ENTITY % propDTD     SYSTEM "chrome://scrapbook/locale/property.dtd" >
+	%propDTD;
+	<!ENTITY % treeDTD     SYSTEM "chrome://scrapbook/locale/tree.dtd" >
+	%treeDTD;
+]>
+
+<!--dialog-->
+<dialog id="sbCopyInfoConfigDialog"
+        title="&sbcopyinfo; : &sbcopyinfo.config;"
+        xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+        style="width:360px;padding:10px;"
+        onload="sbCopyInfoConfig.init();"
+        ondialogaccept="sbCopyInfoConfig.done();">
+
+	<!--JavaScript-->
+	<script type="application/x-javascript" src="chrome://scrapbook/content/common.js" />
+	<script type="application/x-javascript" src="chrome://sbcopyinfo/content/common.js" />
+	<script type="application/x-javascript" src="chrome://sbcopyinfo/content/config.js" />
+
+	<keyset>
+		<key keycode="VK_ESCAPE" oncommand="window.close();" />
+	</keyset>
+
+	<hbox align="center">
+		<label value="&sbcopyinfo.format;:" />
+		<spacer flex="1" />
+		<button type="menu" label="&sbcopyinfo.preset;">
+			<menupopup id="sbCopyInfoPresetMenu">
+				<menuitem oncommand="sbCopyInfoConfig.setPreset('TS');"   label="&sb.prop.title; + URL" />
+				<menuitem oncommand="sbCopyInfoConfig.setPreset('TL');"   label="&sb.prop.title; + &sbcopyinfo.localURL;" />
+				<menuitem oncommand="sbCopyInfoConfig.setPreset('TS+');"  label="&sb.prop.title; (&sbcopyinfo.withLink.sourceURL;)" />
+				<menuitem oncommand="sbCopyInfoConfig.setPreset('TL+');"  label="&sb.prop.title; (&sbcopyinfo.withLink.localURL;)" />
+				<menuitem oncommand="sbCopyInfoConfig.setPreset('TSS+');" label="&sb.prop.title; + URL (&sbcopyinfo.withLink.sourceURL;)" />
+				<menuitem oncommand="sbCopyInfoConfig.setPreset('TLL+');" label="&sb.prop.title; + &sbcopyinfo.localURL; (&sbcopyinfo.withLink.localURL;)" />
+			</menupopup>
+		</button>
+	</hbox>
+	<textbox id="sbCopyInfoTemplate" multiline="true" rows="6" />
+	<label>%TITLE%   : &sb.prop.title;</label>
+	<label>%SOURCE%  : URL</label>
+	<label>%LOCAL%   : &sbcopyinfo.localURL;</label>
+	<label>%COMMENT% : &sb.prop.comment;</label>
+	<label>%DATE%    : &sb.prop.date;</label>
+	<label>%ID%      : ID</label>
+	<label>%FOLDER%  : &sb.prop.folder;</label>
+	<label>%TAB%     : &sbcopyinfo.tab;</label>
+	<label>%BIBLOCAL%  : Local file link bibtex-format</label>
+	<label>%BIBMONTH%  : Month bibtex-format</label>
+	<label>%BIBYEAR%  : Year bibtex-format</label>
+	<label>%BIBTITLE% : Title for file-links bibtex-format</label>
+	
+	<separator class="groove" />
+	<description>&sbcopyinfo.tips.recursive;</description>
+
+</dialog>

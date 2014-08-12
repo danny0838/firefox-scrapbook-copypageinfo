@@ -1,0 +1,7 @@
+<!ENTITY sbcopyinfo.format "フォーマット">
+<!ENTITY sbcopyinfo.preset "プリセット">
+<!ENTITY sbcopyinfo.localURL "ローカルファイルURL">
+<!ENTITY sbcopyinfo.tab "タブ">
+<!ENTITY sbcopyinfo.withLink.localURL "と&sbcopyinfo.localURL;へのリンク">
+<!ENTITY sbcopyinfo.withLink.sourceURL "とソースURLへのリンク">
+<!ENTITY sbcopyinfo.tips.recursive "ヒント: フォルダを右クリックして [ページ情報のコピー] を中クリックすると、サブフォルダ内も再帰的にコピーできます。">

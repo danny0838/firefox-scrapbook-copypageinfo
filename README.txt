@@ -6,11 +6,11 @@ You can configure the format of copied informations. Go to Sidebar, [Tools] > [A
 
 See also:
 
-Documentation Wiki / Download:
-http://github.com/danny0838/firefox-scrapbook-copypageinfo/wiki
+Firefox addon page:
+https://addons.mozilla.org/firefox/addon/scrapbook-copypageinfo/
 
 Project repository:
 http://github.com/danny0838/firefox-scrapbook-copypageinfo
 
-Original Firefox addon page:
-http://addons.mozilla.org/firefox/addon/scrapbook-copypageinfo-bumped-/
+Documentation Wiki:
+http://github.com/danny0838/firefox-scrapbook-copypageinfo/wiki

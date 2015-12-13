@@ -1,3 +1,10 @@
+Scrapbook X CopyPageInfo 1.3.9
+----------------
+
+- COMPATIBLE WITH: ScrapBook X 1.12.11, ScrapBook Plus 1.9.24.40b3, ScrapBook 1.5.13
+- UPDATE: Update reference links in the readme file.
+
+
 Scrapbook X CopyPageInfo 1.3.8
 ----------------
 

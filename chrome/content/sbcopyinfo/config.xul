@@ -37,23 +37,23 @@
         <spacer flex="1" />
         <button type="menu" label="&sbcopyinfo.preset;">
             <menupopup id="sbCopyInfoPresetMenu">
-                <menuitem oncommand="sbCopyInfoConfig.setPreset('TS');"   label="&sb.prop.title; + URL" />
-                <menuitem oncommand="sbCopyInfoConfig.setPreset('TL');"   label="&sb.prop.title; + &sbcopyinfo.localURL;" />
-                <menuitem oncommand="sbCopyInfoConfig.setPreset('TS+');"  label="&sb.prop.title; (&sbcopyinfo.withLink.sourceURL;)" />
-                <menuitem oncommand="sbCopyInfoConfig.setPreset('TL+');"  label="&sb.prop.title; (&sbcopyinfo.withLink.localURL;)" />
-                <menuitem oncommand="sbCopyInfoConfig.setPreset('TSS+');" label="&sb.prop.title; + URL (&sbcopyinfo.withLink.sourceURL;)" />
-                <menuitem oncommand="sbCopyInfoConfig.setPreset('TLL+');" label="&sb.prop.title; + &sbcopyinfo.localURL; (&sbcopyinfo.withLink.localURL;)" />
+                <menuitem oncommand="sbCopyInfoConfig.setPreset('TS');"   label="&sbcopyinfo.title; + URL" />
+                <menuitem oncommand="sbCopyInfoConfig.setPreset('TL');"   label="&sbcopyinfo.title; + &sbcopyinfo.localURL;" />
+                <menuitem oncommand="sbCopyInfoConfig.setPreset('TS+');"  label="&sbcopyinfo.title; (&sbcopyinfo.withLink.sourceURL;)" />
+                <menuitem oncommand="sbCopyInfoConfig.setPreset('TL+');"  label="&sbcopyinfo.title; (&sbcopyinfo.withLink.localURL;)" />
+                <menuitem oncommand="sbCopyInfoConfig.setPreset('TSS+');" label="&sbcopyinfo.title; + URL (&sbcopyinfo.withLink.sourceURL;)" />
+                <menuitem oncommand="sbCopyInfoConfig.setPreset('TLL+');" label="&sbcopyinfo.title; + &sbcopyinfo.localURL; (&sbcopyinfo.withLink.localURL;)" />
             </menupopup>
         </button>
     </hbox>
     <textbox id="sbCopyInfoTemplate" multiline="true" rows="6" />
-    <label>%TITLE%   : &sb.prop.title;</label>
+    <label>%TITLE%   : &sbcopyinfo.title;</label>
     <label>%SOURCE%  : URL</label>
     <label>%LOCAL%   : &sbcopyinfo.localURL;</label>
-    <label>%COMMENT% : &sb.prop.comment;</label>
-    <label>%DATE%    : &sb.prop.date;</label>
+    <label>%COMMENT% : &sbcopyinfo.comment;</label>
+    <label>%DATE%    : &sbcopyinfo.date;</label>
     <label>%ID%      : ID</label>
-    <label>%FOLDER%  : &sb.prop.folder;</label>
+    <label>%FOLDER%  : &sbcopyinfo.folder;</label>
     <label>%TAB%     : &sbcopyinfo.tab;</label>
     <label>%BIBLOCAL%  : Local file link bibtex-format</label>
     <label>%BIBMONTH%  : Month bibtex-format</label>

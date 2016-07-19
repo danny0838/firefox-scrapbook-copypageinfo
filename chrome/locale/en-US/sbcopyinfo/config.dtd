@@ -1,6 +1,10 @@
 <!ENTITY sbcopyinfo.format "Format">
 <!ENTITY sbcopyinfo.preset "Preset">
+<!ENTITY sbcopyinfo.title "Title">
 <!ENTITY sbcopyinfo.localURL "Local File URL">
+<!ENTITY sbcopyinfo.comment "Comment">
+<!ENTITY sbcopyinfo.date "Date">
+<!ENTITY sbcopyinfo.folder "Folder">
 <!ENTITY sbcopyinfo.tab "Tab">
 <!ENTITY sbcopyinfo.withLink.localURL "with link to &sbcopyinfo.localURL;">
 <!ENTITY sbcopyinfo.withLink.sourceURL "with link to URL">

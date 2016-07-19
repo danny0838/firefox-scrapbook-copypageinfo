@@ -1,6 +1,10 @@
 <!ENTITY sbcopyinfo.format "格式">
 <!ENTITY sbcopyinfo.preset "預設">
-<!ENTITY sbcopyinfo.localURL "擷取文件存放處">
+<!ENTITY sbcopyinfo.title "標題">
+<!ENTITY sbcopyinfo.localURL "擷取文件的 URL">
+<!ENTITY sbcopyinfo.comment "評註">
+<!ENTITY sbcopyinfo.date "日期">
+<!ENTITY sbcopyinfo.folder "資料夾">
 <!ENTITY sbcopyinfo.tab "分頁">
 <!ENTITY sbcopyinfo.withLink.localURL "加上&sbcopyinfo.localURL;連結">
 <!ENTITY sbcopyinfo.withLink.sourceURL "加上原始網址連結">

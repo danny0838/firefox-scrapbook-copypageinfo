@@ -1,15 +1,32 @@
 (function(){
     var PREF = Components.classes["@mozilla.org/preferences-service;1"].getService(Components.interfaces.nsIPrefService).getBranch("extensions.scrapbook.addon.copyinfo.");
 
-    var oSBCommon = ("ScrapBookUtils" in window) ? ScrapBookUtils : sbCommonUtils;
-    var oSBData = ("ScrapBookData" in window) ? ScrapBookData : ("sbDataSource" in window) ? sbDataSource : null;
-    var oSBController = ("sbController" in window) ? sbController : null;
-    var oSBTree = ("sbTreeUI" in window) ? sbTreeUI : ("sbTreeHandler" in window) ? sbTreeHandler : null;
-    var oSBList = ("sbListHandler" in window) ? sbListHandler : null;
+    var oSBCommon =
+        (typeof ScrapBookUtils != "undefined") ? ScrapBookUtils :
+        (typeof sbCommonUtils != "undefined") ? sbCommonUtils :
+        null;
+    var oSBData =
+        (typeof ScrapBookData != "undefined") ? ScrapBookData :
+        (typeof sbDataSource != "undefined") ? sbDataSource :
+        null;
+    var oSBController =
+        (typeof sbController != "undefined") ? sbController :
+        null;
+    var oSBTree =
+        (typeof sbTreeUI != "undefined") ? sbTreeUI :
+        (typeof sbTreeHandler != "undefined") ? sbTreeHandler :
+        null;
+    var oSBList =
+        (typeof sbListHandler != "undefined") ? sbListHandler :
+        null;
 
     window.sbCopyInfoCommon = {
         get checkCompatibility() {
             return oSBCommon && oSBData && ("flattenResources" in oSBData);
+        },
+
+        get RDF() {
+            return oSBCommon.RDF;
         },
 
         get RDFC() {

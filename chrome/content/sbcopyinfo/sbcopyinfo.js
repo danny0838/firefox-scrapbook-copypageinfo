@@ -12,7 +12,7 @@ var sbCopyInfoService = {
     {
         this.template = sbCopyInfoCommon.copyUnicharPref("copyPageInfo", "%TITLE%\n%SOURCE%\n");
         if ( !this.template.match(/\n$/) ) txt += "\n";
-        if ( !aRes ) aRes = sbCopyInfoTree.resource;
+        if ( !aRes ) aRes = sbCopyInfoCommon.RDF.GetResource("urn:scrapbook:root");
         this.folderPath = [];
         var tmpRes = aRes;
         for ( var i = 0; i < 32; i++ )
@@ -22,10 +22,12 @@ var sbCopyInfoService = {
             this.folderPath.unshift(sbCopyInfoData.getProperty(tmpRes, "title"));
         }
         var txt = "";
-        if ( sbCopyInfoData.isContainer(aRes) )
-            txt += this.processFolderRecursively(aRes, aRecursive);
-        else
+        if ( sbCopyInfoData.getProperty(aRes, "type") != "folder" && aRes.Value != "urn:scrapbook:root" ) {
             txt += this.getPageInfo(aRes);
+        }
+        if ( sbCopyInfoData.isContainer(aRes) ) {
+            txt += this.processFolderRecursively(aRes, aRecursive);
+        }
         txt = txt.replace(/%TAB%/g, "\t");
         try {
             const CLIPBOARD = Components.classes["@mozilla.org/widget/clipboardhelper;1"].getService(Components.interfaces.nsIClipboardHelper);
@@ -44,10 +46,11 @@ var sbCopyInfoService = {
         while ( resEnum.hasMoreElements() )
         {
             var res = resEnum.getNext();
+            if ( sbCopyInfoData.getProperty(res, "type") != "folder" ) {
+                txt += this.getPageInfo(res);
+            }
             if ( sbCopyInfoData.isContainer(res) ) {
                 if ( aRecursive ) txt += this.processFolderRecursively(res, aRecursive);
-            } else {
-                txt += this.getPageInfo(res);
             }
         }
         if ( aRes.Value != "urn:scrapbook:root" ) this.folderPath.pop();

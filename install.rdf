@@ -12,7 +12,7 @@
     <em:description>Copies the information from ScrapBook data items.</em:description>
     <em:iconURL>chrome://scrapbook/skin/main_32.png</em:iconURL>
     <em:optionsURL>chrome://sbcopyinfo/content/config.xul</em:optionsURL>
-    <em:homepageURL>http://github.com/danny0838/firefox-scrapbook-copypageinfo</em:homepageURL>
+    <em:homepageURL>http://addons.mozilla.org/firefox/addon/scrapbook-copypageinfo</em:homepageURL>
 
     <em:targetApplication>
       <Description>

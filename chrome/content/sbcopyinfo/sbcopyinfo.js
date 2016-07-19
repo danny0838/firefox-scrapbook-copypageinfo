@@ -12,7 +12,7 @@ var sbCopyInfoService = {
     {
         this.template = sbCopyInfoCommon.copyUnicharPref("copyPageInfo", "%TITLE%\n%SOURCE%\n");
         if ( !this.template.match(/\n$/) ) txt += "\n";
-        if ( !aRes ) aRes = sbCopyInfoTree.resource;
+        if ( !aRes ) aRes = sbCopyInfoCommon.RDF.GetResource("urn:scrapbook:root");
         this.folderPath = [];
         var tmpRes = aRes;
         for ( var i = 0; i < 32; i++ )

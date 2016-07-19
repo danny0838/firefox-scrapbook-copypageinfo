@@ -25,6 +25,10 @@
             return oSBCommon && oSBData && ("flattenResources" in oSBData);
         },
 
+        get RDF() {
+            return oSBCommon.RDF;
+        },
+
         get RDFC() {
             return oSBCommon.RDFC;
         },
